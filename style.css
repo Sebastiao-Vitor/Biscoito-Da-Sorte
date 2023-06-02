@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-Sorte: 'Dancing Script', cursive;
+  --ff-p: 'DM Sans', sans-serif;
+  --ff-h: 'Montserrat', sans-serif;
+}
+
+body {
+  min-width: 46rem;
+  height: 100vh;
+  margin: 10rem auto;
+  color: #34355B;
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.screen1 {
+  width: 42.8rem;
+  height: 42.4rem;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+
+  /* display: grid; */
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 4.8rem 0 6.4rem;
+}
+
+.screen1 h1 {
+  font-family: var(--ff-h);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.screen1 p {
+  font-family: var(--ff-p);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.screen1 img {
+  height: 20rem;
+  filter: drop-shadow(.2rem .4rem .5rem black);
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+#Biscoito:hover {
+  animation: treme .2s ease infinite backwards;
+  scale: 1.1;
+}
+
+@keyframes treme {
+  0% {margin-left: -.2rem;transform: rotateZ(-3deg);}
+  25% {margin-left: .2rem; transform: rotateZ(3deg);}
+  50% {margin-left: -.2rem; transform: rotateZ(-3deg);}
+  75% {margin-left: .2rem; transform: rotateZ(3deg);}
+  100% {margin-left: -.2rem; transform: rotateZ(-3deg);}
+}
+
+.screen2 {
+  padding: 4.8rem 6.4rem;
+  width: 42.8rem;
+  height: 56.4rem;
+  background: #FFFFFF;
+  box-shadow: 0rem 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+  text-align: center;
+}
+
+.screen2 h2 {
+  font-family: var(--ff-h);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.Sort {
+  padding: 1rem;
+  width: 29.3rem;
+  height: 10.7rem;
+  margin: 1.7rem 0.05rem;
+  
+  background: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+  animation: DawnUp 0.4s ease-in-out backwards;
+}
+
+@keyframes DawnUp {
+  0% {scale: 0; transform: translateY(100rem); opacity: 0;}
+  30% {scale: 0; transform: translateY(70rem); opacity: 0;}
+  40% {scale: 0.01;opacity: 0;}
+  60% {scale: 0.4; opacity: 0.8;}
+  80% {scale: 0.8; opacity: 1;}
+  100% {scale: 1; opacity: 1;}
+}
+
+#Sorte {
+  font-family: var(--ff-Sorte);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #000000;
+}
+
+.screen2 img {
+  padding: 4.3rem 0.05rem;
+  transition: .5s ease-in-out;
+  filter: drop-shadow(.1rem .1rem .2rem black);
+}
+
+button {
+  margin-top: 1.7rem;
+  padding: 1.6rem;
+  width: 17.4rem;
+  height: 5.2rem;
+  
+  background: #FF9500;
+  border-radius: .4rem;
+  border: none;
+
+  font-family: var(--ff-p);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #FFFFFF;
+  box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.1;
+  background: #ff9500;
+}
+
+#Biscoito {
+  animation: BiscoitoBalancando .5s ease infinite;
+}
+@keyframes BiscoitoBalancando {
+  0% {}
+  50% {}
+  100% {}
+}
